@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerudung Lengan Saku Premium - AYUNDA</title>
+    <meta name="description" content="Hijab Instan Lengan Saku Premium dari Jersey Hyget. Praktis, nyaman, dan elegan untuk semua acara.">
+    <meta name="keywords" content="kerudung lengan saku, hijab instan, hijab premium, jersey hyget">
+    <meta property="og:title" content="Kerudung Lengan Saku Premium - AYUNDA">
+    <meta property="og:description" content="Hijab Instan Lengan Saku Premium. Diskon 38% - Rp 155.000">
+    <meta property="og:image" content="https://cdn.orderonline.id/uploads/images_6388901759742032453.png">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧕</text></svg>">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --teal-dark: #004d4d;
+            --green-islami: #009688;
+            --gold: #d4af37;
+            --cream: #f5f5dc;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, var(--teal-dark) 0%, var(--green-islami) 100%);
+        }
+        
+        .gradient-gold {
+            background: linear-gradient(135deg, var(--gold) 0%, #f4e4bc 100%);
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .sticky-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .color-option {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .color-option:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .color-option.active {
+            border: 3px solid var(--gold);
+            transform: scale(1.15);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .countdown {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        /* Custom OrderOnline Form Styles */
+        .ooef {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .orderonline-embed-form {
+            background: linear-gradient(135deg, rgba(0,77,77,0.05) 0%, rgba(0,150,136,0.05) 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212,175,55,0.2);
+        }
+        
+        .orderonline-embed-form input,
+        .orderonline-embed-form select,
+        .orderonline-embed-form textarea {
+            border-radius: 8px !important;
+            border: 1px solid #e5e7eb !important;
+            padding: 12px 16px !important;
+            font-family: 'Inter', sans-serif !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .orderonline-embed-form input:focus,
+        .orderonline-embed-form select:focus,
+        .orderonline-embed-form textarea:focus {
+            border-color: var(--gold) !important;
+            box-shadow: 0 0 0 3px rgba(212,175,55,0.1) !important;
+            outline: none !important;
+        }
+        
+        .orderonline-embed-form button {
+            background: linear-gradient(135deg, var(--gold) 0%, #f4e4bc 100%) !important;
+            color: var(--teal-dark) !important;
+            border: none !important;
+            border-radius: 8px !important;
+            padding: 14px 28px !important;
+            font-weight: 600 !important;
+            font-family: 'Inter', sans-serif !important;
+            transition: all 0.3s ease !important;
+            cursor: pointer !important;
+        }
+        
+        .orderonline-embed-form button:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 10px 20px rgba(212,175,55,0.3) !important;
+        }
+        
+        .ooef-loader {
+            background: rgba(255,255,255,0.9) !important;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: clamp(2rem, 5vw, 3rem);
+            }
+            
+            .orderonline-embed-form {
+                padding: 1rem;
+            }
+        }
+        
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body class="bg-cream" x-data="{ 
+    selectedColor: null,
+    mobileMenu: false,
+    scrolled: false,
+    countdown: {
+        hours: 23,
+        minutes: 59,
+        seconds: 59
+    }
+}" x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 50 })">
+    
+    <!-- Navigation -->
+    <nav class="sticky-nav glass-effect shadow-lg" :class="{ 'shadow-xl': scrolled }">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl">🧕</span>
+                    <span class="font-bold text-xl" style="color: var(--teal-dark);">AYUNDA</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-green-islami transition">Beranda</a>
+                    <a href="#product" class="hover:text-green-islami transition">Produk</a>
+                    <a href="#benefits" class="hover:text-green-islami transition">Keunggulan</a>
+                    <a href="#testimonials" class="hover:text-green-islami transition">Testimoni</a>
+                    <a href="#order" class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition">Pesan Sekarang</a>
+                </div>
+                
+                <button @click="mobileMenu = !mobileMenu" class="md:hidden">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div x-show="mobileMenu" x-transition class="md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 hover:text-green-islami">Beranda</a>
+                <a href="#product" class="block py-2 hover:text-green-islami">Produk</a>
+                <a href="#benefits" class="block py-2 hover:text-green-islami">Keunggulan</a>
+                <a href="#testimonials" class="block py-2 hover:text-green-islami">Testimoni</a>
+                <a href="#order" class="block mt-4 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-6 py-2 rounded-full text-center">Pesan Sekarang</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center gradient-primary overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-10 left-10 w-64 h-64 bg-white rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-yellow-300 rounded-full filter blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white fade-in">
+                    <div class="inline-flex items-center bg-white/20 backdrop-blur px-4 py-2 rounded-full mb-6">
+                        <span class="text-yellow-300 mr-2">⭐</span>
+                        <span class="text-sm">Terjual 5000+ PCS</span>
+                    </div>
+                    
+                    <h1 class="hero-title font-playfair font-bold text-4xl md:text-6xl mb-6 text-shadow">
+                        Kerudung Lengan Saku Premium
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl mb-8 text-white/90">
+                        Hijab instan praktis dengan lengan saku jumbo. Desain elegan, bahan premium, nyaman untuk semua acara.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <div>
+                            <span class="text-3xl font-bold text-yellow-300">Rp 155.000</span>
+                            <span class="text-xl line-through text-white/70 ml-2">Rp 248.900</span>
+                        </div>
+                        <div class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold self-center">
+                            DISKON 38%
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#order" class="gradient-gold text-teal-dark px-8 py-4 rounded-full font-semibold text-center hover:shadow-xl transition pulse-animation">
+                            🛒 Pesan Sekarang
+                        </a>
+                        <a href="#product" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-center hover:bg-white hover:text-teal-dark transition">
+                            Lihat Detail
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center gap-6 mt-8 text-sm">
+                        <div class="flex items-center">
+                            <i data-feather="truck" class="w-4 h-4 mr-1"></i>
+                            Gratis Ongkir
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="shield" class="w-4 h-4 mr-1"></i>
+                            Garansi 100%
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="refresh-cw" class="w-4 h-4 mr-1"></i>
+                            Bisa Retur
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://cdn.orderonline.id/uploads/images_6388901759742032453.png" 
+                         alt="Kerudung Lengan Saku" 
+                         class="rounded-2xl shadow-2xl hover-lift">
+                    <div class="absolute -bottom-4 -left-4 bg-yellow-400 text-teal-dark px-4 py-2 rounded-lg font-semibold">
+                        LIMITED EDITION
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 scroll-indicator">
+            <i data-feather="chevron-down" class="w-8 h-8 text-white"></i>
+        </div>
+    </section>
+    
+    <!-- Product Showcase -->
+    <section id="product" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-4" style="color: var(--teal-dark);">
+                    Galeri Produk
+                </h2>
+                <p class="text-gray-600 text-lg">Lihat keindahan dan detail Kerudung Lengan Saku Premium</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <div class="relative overflow-hidden rounded-2xl shadow-xl">
+                        <img id="mainImage" src="https://cdn.orderonline.id/uploads/images_6388901759742032453.png" 
+                             alt="Main Product" 
+                             class="w-full hover:scale-110 transition duration-500 cursor-pointer">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            HOT SALE
+                        </div>
+                    </div>
+                    
+                    <!-- Video Demo -->
+                    <div class="mt-6 rounded-2xl overflow-hidden shadow-xl">
+                        <video controls class="w-full" poster="https://cdn.orderonline.id/uploads/images_6388901759742032453.png">
+                            <source src="https://cdn.unwatermark.ai/datarm/unwatermark-removebg-video/2025-10-06/output/6bd31854-1d5c-44f2-b39e-1e802e863f7a.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-playfair text-3xl font-bold mb-6" style="color: var(--teal-dark);">
+                        Detail Produk Premium
+                    </h3>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <span class="text-2xl mr-3">✨</span>
+                            <div>
+                                <h4 class="font-semibold mb-1">Bahan Premium Jersey Hyget</h4>
+                                <p class="text-gray-600">Tebal, jatuh, dingin, lembut, dan nyaman dipakai seharian</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-2xl mr-3">👗</span>
+                            <div>
+                                <h4 class="font-semibold mb-1">Desain Lengan Saku Jumbo</h4>
+                                <p class="text-gray-600">Praktis dan simple, langsung menutup aurat tanpa ribet</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-2xl mr-3">📏</span>
+                            <div>
+                                <h4 class="font-semibold mb-1">Ukuran Ideal</h4>
+                                <p class="text-gray-600">Panjang depan 90cm, belakang 105cm. Cocok untuk semua bentuk wajah</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-2xl mr-3">🧵</span>
+                            <div>
+                                <h4 class="font-semibold mb-1">Jahitan Rapih Premium</h4>
+                                <p class="text-gray-600">Diseleksi khusus oleh butik, tidak mudah kusut</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-teal-dark to-green-islami text-white p-6 rounded-2xl">
+                        <h4 class="font-bold text-xl mb-3">Spesifikasi Lengkap</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• Type: Hijab Lengan Saku</li>
+                            <li>• Pad: Anthem</li>
+                            <li>• Berat: 200gr/pcs (1kg muat 5pcs)</li>
+                            <li>• 100% REALPICT sesuai gambar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Color Selection -->
+            <div class="mb-16">
+                <h3 class="font-playfair text-3xl font-bold mb-8 text-center" style="color: var(--teal-dark);">
+                    Pilih Warna Favorit Anda
+                </h3>
+                <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lm2p6afkat2j59@resize_w450_nl.webp" 
+                             alt="Hitam" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Hitam'">
+                        <p class="mt-2 text-sm font-medium">Hitam</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r991-lm2p6afkc7mz5a@resize_w450_nl.webp" 
+                             alt="Coksu" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Coksu'">
+                        <p class="mt-2 text-sm font-medium">Coksu</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lm2p6afkdm7f0d@resize_w450_nl.webp" 
+                             alt="Millo" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Millo'">
+                        <p class="mt-2 text-sm font-medium">Millo</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98z-lm2p6afkf0rv76@resize_w450_nl.webp" 
+                             alt="Lavender" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Lavender'">
+                        <p class="mt-2 text-sm font-medium">Lavender</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98p-lm2p6afkhtwrae@resize_w450_nl.webp" 
+                             alt="Marun" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Marun'">
+                        <p class="mt-2 text-sm font-medium">Marun</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r990-lm2p6afk573827@resize_w450_nl.webp" 
+                             alt="Navy" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Navy'">
+                        <p class="mt-2 text-sm font-medium">Navy</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r991-lm2p6afk6lno5e@resize_w450_nl.webp" 
+                             alt="Biru" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Biru'">
+                        <p class="mt-2 text-sm font-medium">Biru</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-lm2p6afk8084f6@resize_w450_nl.webp" 
+                             alt="Sage" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Sage'">
+                        <p class="mt-2 text-sm font-medium">Sage</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98u-lm2p6afk9eskc4@resize_w450_nl.webp" 
+                             alt="Kunyit" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Kunyit'">
+                        <p class="mt-2 text-sm font-medium">Kunyit</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-lmo856dn99jg18@resize_w450_nl.webp" 
+                             alt="Army" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Army'">
+                        <p class="mt-2 text-sm font-medium">Army</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98u-lmu2llk6maa4b0@resize_w450_nl.webp" 
+                             alt="Putih" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Putih'">
+                        <p class="mt-2 text-sm font-medium">Putih</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-lmu2llk6nouk6f@resize_w450_nl.webp" 
+                             alt="Abu" 
+                             class="w-full rounded-lg hover-lift color-option"
+                             @click="selectedColor = 'Abu'">
+                        <p class="mt-2 text-sm font-medium">Abu</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Gallery -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-ln5aou08flqv59.webp" 
+                     alt="Gallery 1" 
+                     class="rounded-lg hover-lift cursor-pointer">
+                <img src="https://cdn.orderonline.id/uploads/images_6715971759742004393.png" 
+                     alt="Gallery 2" 
+                     class="rounded-lg hover-lift cursor-pointer">
+                <img src="https://cdn.orderonline.id/uploads/images_2701991759742011509.png" 
+                     alt="Gallery 3" 
+                     class="rounded-lg hover-lift cursor-pointer">
+                <div class="relative rounded-lg overflow-hidden hover-lift cursor-pointer group">
+                    <img src="https://cdn.orderonline.id/uploads/images_6388901759742032453.png" 
+                         alt="More Photos" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                        <span class="text-white font-semibold">+5 Foto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-4" style="color: var(--teal-dark);">
+                    Apa Kata Mereka?
+                </h2>
+                <p class="text-gray-600 text-lg">Testimoni dari pelanggan setia kami</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gradient-to-br from-cream to-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-teal-dark flex items-center justify-center text-white font-bold mr-3">
+                            AR
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Anisa Rahma</h4>
+                            <div class="flex text-yellow-400">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Hijabnya bagus banget! Bahannya nyaman, modelnya elegan. Cocok untuk semua acara. Recommended seller!"
+                    </p>
+                </div>
+                
+                <div class="testimonial-card bg-gradient-to-br from-cream to-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-teal-dark flex items-center justify-center text-white font-bold mr-3">
+                            SN
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Siti Nurhaliza</h4>
+                            <div class="flex text-yellow-400">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Sudah beli 3 warna, semuanya bagus. Jahitannya rapi, bahannya adem. Pengiriman cepat. Terima kasih AYUNDA!"
+                    </p>
+                </div>
+                
+                <div class="testimonial-card bg-gradient-to-br from-cream to-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-teal-dark flex items-center justify-center text-white font-bold mr-3">
+                            DP
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Dewi Puspita</h4>
+                            <div class="flex text-yellow-400">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Praktis banget pakai hijab ini, ga perlu ribet pakai atasan lagi. Lengannya nyaman dan pas. Love it!"
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Live Counter -->
+            <div class="mt-16 text-center">
+                <div class="inline-flex items-center bg-gradient-to-r from-green-islami to-teal-dark text-white px-6 py-3 rounded-full">
+                    <span class="relative flex h-3 w-3 mr-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    <span class="font-semibold">23 orang sedang melihat produk ini</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing & Order Section -->
+    <section id="order" class="py-20 bg-gradient-to-br from-teal-dark to-green-islami">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-4 text-white">
+                        Pesan Sekarang Juga!
+                    </h2>
+                    <p class="text-white/90 text-lg">Dapatkan harga spesial sebelum kehabisan</p>
+                </div>
+
+                <!-- Pricing Card -->
+                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                    <div class="gradient-gold p-6 text-center">
+                        <h3 class="font-playfair text-3xl font-bold text-teal-dark mb-2">Harga Spesial Hari Ini</h3>
+                        <div class="flex items-center justify-center gap-4">
+                            <span class="text-4xl font-bold text-teal-dark">Rp 155.000</span>
+                            <span class="text-2xl line-through text-teal-dark/60">Rp 248.900</span>
+                            <span class="bg-red-500 text-white px-3 py-1 rounded-full font-semibold">HEMAT 38%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- OrderOnline Form -->
+                    <div class="p-8">
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" 
+                                  data-username="mila" 
+                                  data-product-slug="kerudung-lengan-saku" 
+                                  data-product-id="68e385017f8f4df05b0b7041" 
+                                  id="oo-embed-form-kerudung-lengan-saku-776" 
+                                  data-origin="orderonline">
+                                <div class="ooef-loader">
+                                    <style>
+                                        .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                    </style>
+                                    <div aria-live="polite" role="status">
+                                        <div>Loading...</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Trust Badges -->
+                    <div class="bg-gray-50 p-6 border-t">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                            <div class="flex items-center justify-center">
+                                <i data-feather="truck" class="w-5 h-5 mr-2 text-green-600"></i>
+                                <span class="text-sm">Gratis Ongkir</span>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <i data-feather="shield" class="w-5 h-5 mr-2 text-green-600"></i>
+                                <span class="text-sm">Garansi Uang Kembali</span>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <i data-feather="lock" class="w-5 h-5 mr-2 text-green-600"></i>
+                                <span class="text-sm">Pembayaran Aman</span>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <i data-feather="refresh-cw" class="w-5 h-5 mr-2 text-green-600"></i>
+                                <span class="text-sm">Bisa Tukar Warna</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="border-t border-white/20 mt-8 pt-8 text-center text-white/60 text-sm">
+                <p>&copy; 2025 AYUNDA. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Sticky CTA -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="#order" class="gradient-gold text-teal-dark px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition flex items-center pulse-animation">
+            <i data-feather="shopping-cart" class="w-5 h-5 mr-2"></i>
+            Beli Sekarang
+        </a>
+    </div>
+    
+    <!-- Scripts -->
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+        
+        // Countdown Timer
+        setInterval(() => {
+            if (countdown.seconds > 0) {
+                countdown.seconds--;
+            } else {
+                countdown.seconds = 59;
+                if (countdown.minutes > 0) {
+                    countdown.minutes--;
+                } else {
+                    countdown.minutes = 59;
+                    if (countdown.hours > 0) {
+                        countdown.hours--;
+                    }
+                }
+            }
+        }, 1000);
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // OrderOnline Integration
+        try {
+            if (typeof xLogError != 'function') {
+                var xLogError = function (error) {
+                    var req = new XMLHttpRequest();
+                    var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                    var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                    req.open('POST', 'https://api.orderonline.id/log', true);
+                    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                    req.send(params);
+                };
+            }
+            
+            if (typeof xEmbedScript != 'function') {
+                var xEmbedScript = function () {
+                    !function(w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                        s = d.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                };
+            }
+            
+            if (typeof xEmbedInit != 'function') {
+                var xEmbedInit = function (w, n) {
+                    if (w.ooe) return;
+                    n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+                    if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                };
+            }
+            
+            xEmbedInit(window);
+            ooe('setup', 'redirect', 'https://mila.orderonline.id');
+            ooe('init', '5f1a7b8fa9bf807da24d83bb', '68e385017f8f4df05b0b7041', '68e385017f8f4df05b0b7042', 'oo-embed-form-kerudung-lengan-saku-776', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true});
+            
+            if (!window.jQuery) {
+                !function(w, d, e, v, id, t, s) {
+                    if (d.getElementById(id)) return;
+                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                    t.addEventListener('load', xEmbedScript);
+                    s = d.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s);
+                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+            } else {
+                xEmbedScript();
+            }
+        } catch (e) {
+            xLogError(e);
+            throw e;
+        }
+        
+        // Color Selection Handler
+        document.querySelectorAll('.color-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.color-option').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Image Gallery Lightbox
+        document.querySelectorAll('.hover-lift').forEach(img => {
+            img.addEventListener('click', function() {
+                const lightbox = document.createElement('div');
+                lightbox.className = 'fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4';
+                lightbox.innerHTML = `<img src="${this.src}" alt="Product" class="max-w-full max-h-full rounded-lg">`;
+                lightbox.addEventListener('click', () => lightbox.remove());
+                document.body.appendChild(lightbox);
+            });
+        });
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
